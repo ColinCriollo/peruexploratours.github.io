@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Perú Explora Tours - Descubre experiencias inolvidables. Proyecto académico.">
+    <title>Paquetes | Perú Explora Tours</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/sesion.js"></script>
+    <script src="js/interfaz.js"></script>
+    <script src="js/validaciones.js" defer></script>
+</head>
+<body>
+
+<header class="site-header" id="inicio">
+    <div class="container header-bar">
+
+        <a class="brand" href="index.html" aria-label="Perú Explora Tours - ir al inicio">
+            <img src="images/logo.jpg" alt="Logo de Perú Explora Tours" width="58" height="58">
+            <span class="brand-texto">
+                <span class="brand-nombre">PERÚ EXPLORA TOURS</span>
+                <span class="brand-lema">Descubre experiencias inolvidables</span>
+            </span>
+        </a>
+
+        <input type="checkbox" id="menu-toggle" aria-label="Mostrar u ocultar el menú">
+        <label class="menu-btn" for="menu-toggle"><span></span><span class="solo-lectores">Menú</span></label>
+
+        <nav class="main-nav" aria-label="Navegación principal">
+            <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a class="activo" href="paquetes.html" aria-current="page">Paquetes</a></li>
+                    <li><a href="destinos.html">Destinos</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+    <section class="page-banner banner-machu">
+        <div class="container">
+            <h1>Paquetes turísticos</h1>
+            <p>Descubre nuestras experiencias y destinos más destacados del Perú.</p>
+        </div>
+    </section>
+
+    <section class="section section-claro">
+        <div class="container">
+            <h2 class="section-title">Nuestros paquetes</h2>
+            <p class="section-sub">Cada paquete incluye una página con itinerario, servicios incluidos y recomendaciones.</p>
+            <div class="cards">
+            <article class="card">
+                <div class="card-img">
+                    <img src="images/paquete-cusco.jpg" alt="Paquete turístico Cusco" loading="lazy">
+                    <span class="etiqueta">Más vendido</span>
+                </div>
+                <div class="card-content">
+                    <h3>Cusco Mágico</h3>
+                    <div class="card-datos">
+                        <span class="duracion">5 días / 4 noches</span>
+                        <p class="precio"><small>Desde</small> S/ 1,450</p>
+                    </div>
+                    <p>Machu Picchu, Valle Sagrado y city tour por la ciudad imperial.</p>
+                    <ul class="servicios">
+                        <li>Hospedaje 4 noches</li>
+                        <li>Guía profesional</li>
+                        <li>Entrada a Machu Picchu</li>
+                    </ul>
+                    <a class="btn" href="paquete-cusco.html">Ver paquete</a>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-img">
+                    <img src="images/paquete-arequipa.jpg" alt="Paquete turístico Arequipa" loading="lazy">
+                    <span class="etiqueta">Cultura y naturaleza</span>
+                </div>
+                <div class="card-content">
+                    <h3>Arequipa y Colca</h3>
+                    <div class="card-datos">
+                        <span class="duracion">4 días / 3 noches</span>
+                        <p class="precio"><small>Desde</small> S/ 980</p>
+                    </div>
+                    <p>La Ciudad Blanca y el impresionante Cañón del Colca.</p>
+                    <ul class="servicios">
+                        <li>Hospedaje 3 noches</li>
+                        <li>Guía profesional</li>
+                        <li>Excursión al Colca</li>
+                    </ul>
+                    <a class="btn" href="paquete-arequipa.html">Ver paquete</a>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-img">
+                    <img src="images/paquete-puno.jpg" alt="Paquete turístico Puno" loading="lazy">
+                    <span class="etiqueta">Nuevo</span>
+                </div>
+                <div class="card-content">
+                    <h3>Puno y Lago Titicaca</h3>
+                    <div class="card-datos">
+                        <span class="duracion">3 días / 2 noches</span>
+                        <p class="precio"><small>Desde</small> S/ 890</p>
+                    </div>
+                    <p>Islas flotantes de los Uros, Taquile y tradiciones del altiplano.</p>
+                    <ul class="servicios">
+                        <li>Hospedaje 2 noches</li>
+                        <li>Paseo en bote</li>
+                        <li>Guía profesional</li>
+                    </ul>
+                    <a class="btn" href="paquete-puno.html">Ver paquete</a>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-img">
+                    <img src="images/paquete-paracas.jpg" alt="Paquete turístico Paracas" loading="lazy">
+                    <span class="etiqueta">1 día</span>
+                </div>
+                <div class="card-content">
+                    <h3>Paracas Full Day</h3>
+                    <div class="card-datos">
+                        <span class="duracion">1 día</span>
+                        <p class="precio"><small>Desde</small> S/ 650</p>
+                    </div>
+                    <p>Islas Ballestas y Reserva Nacional de Paracas en un solo día.</p>
+                    <ul class="servicios">
+                        <li>Paseo en bote</li>
+                        <li>Entradas a la reserva</li>
+                        <li>Guía profesional</li>
+                    </ul>
+                    <a class="btn" href="paquete-paracas.html">Ver paquete</a>
+                </div>
+            </article>
+            </div>
+            <p class="aviso">Precios referenciales para fines académicos. La reserva en esta página es demostrativa.</p>
+        </div>
+    </section>
+
+<section class="section section-crema" id="comparacion">
+    <div class="container">
+
+        <h2 class="section-title">
+            Compara nuestros paquetes turísticos
+        </h2>
+
+        <p class="section-sub">
+            Selecciona visualmente cada paquete pasando el mouse
+            sobre las filas de nuestra tabla.
+        </p>
+
+        <div class="tabla-wrap">
+            <table class="itinerario" id="tabla-paquetes">
+                <thead>
+                    <tr>
+                        <th>Paquete turístico</th>
+                        <th>Duración</th>
+                        <th>Precio</th>
+                        <th>Destino</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Paquete">Cusco Mágico</td>
+                        <td data-label="Duración">5 días / 4 noches</td>
+                        <td data-label="Precio">S/ 1,450</td>
+                        <td data-label="Destino">Cusco</td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Paquete">Arequipa y Colca</td>
+                        <td data-label="Duración">4 días / 3 noches</td>
+                        <td data-label="Precio">S/ 980</td>
+                        <td data-label="Destino">Arequipa</td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Paquete">Puno y Lago Titicaca</td>
+                        <td data-label="Duración">3 días / 2 noches</td>
+                        <td data-label="Precio">S/ 890</td>
+                        <td data-label="Destino">Puno</td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Paquete">Paracas Full Day</td>
+                        <td data-label="Duración">1 día</td>
+                        <td data-label="Precio">S/ 650</td>
+                        <td data-label="Destino">Paracas</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="aviso">
+            Pasa el cursor sobre cada paquete para visualizar
+            el efecto interactivo.
+        </p>
+    </div>
+</section>
+
+        <section class="section" id="calculadora">
+    <div class="container">
+
+        <p class="centrado"><a class="btn" href="compra.html">Simular compra</a></p>
+        <h2 class="section-title">Comparativa de precios por grupo</h2>
+        <p class="section-sub">
+            Indica hasta cuántos viajeros quieres comparar y verás el precio de todos los paquetes.
+        </p>
+
+        <div class="calc-caja">
+            <label for="doble-max">¿Hasta cuántos viajeros? (1 - 12)</label>
+            <input type="number" id="doble-max" min="1" max="12" value="6"
+                   oninput="this.setCustomValidity('')">
+
+            <button type="button" class="btn" onclick="generarTablaDoble()">
+                Ver comparativa
+            </button>
+        </div>
+
+        <div id="doble-resultado" class="tabla-wrap"></div>
+
+    </div>
+</section>
+
+    <section class="section cta">
+        <div class="container">
+            <h2>¿No encuentras lo que buscas?</h2>
+            <p>Cuéntanos qué tipo de viaje te gustaría hacer y armamos una propuesta contigo.</p>
+            <div class="grupo-botones"><a class="btn" href="contacto.html">Escríbenos</a></div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+
+        <div>
+            <div class="footer-logo">
+                <img src="images/logo.jpg" alt="Logo de Perú Explora Tours" width="48" height="48">
+                <strong>PERÚ EXPLORA TOURS</strong>
+            </div>
+            <p>Descubre experiencias inolvidables. Agencia turística ficticia creada con fines académicos.</p>
+        </div>
+
+        <div>
+            <h2>Enlaces rápidos</h2>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="paquetes.html">Paquetes</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Contáctanos</h2>
+            <address>
+                Esquina de Hermann Güiner y Av. Augusto B. Leguía,<br>
+                Chiclayo 14011<br>
+                peruexploratours@gmail.com<br>
+                (51) 988 494 767
+            </address>
+        </div>
+
+        <div>
+            <h2>Redes sociales</h2>
+            <ul>
+                <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="container copyright">
+        <small>&copy; 2026 PERÚ EXPLORA TOURS &ndash; Proyecto académico.</small>
+        <small>Taller de Programación Web &middot; HTML5 + CSS3</small>
+    </div>
+</footer>
+
+<a class="volver-arriba" href="#inicio" aria-label="Volver arriba">&uarr;</a>
+
+</body>
+</html>

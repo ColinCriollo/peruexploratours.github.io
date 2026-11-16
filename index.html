@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Perú Explora Tours - Descubre experiencias inolvidables.">
+    <title>Inicio | Perú Explora Tours</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/sesion.js"></script>
+    <script src="js/interfaz.js"></script>
+    <script src="js/slider.js" defer></script>
+</head>
+<body>
+
+<header class="site-header" id="inicio">
+    <div class="container header-bar">
+
+        <a class="brand" href="index.html" aria-label="Perú Explora Tours - ir al inicio">
+            <img src="images/logo.jpg" alt="Logo de Perú Explora Tours" width="58" height="58">
+            <span class="brand-texto">
+                <span class="brand-nombre">PERÚ EXPLORA TOURS</span>
+                <span class="brand-lema">Descubre experiencias inolvidables</span>
+            </span>
+        </a>
+
+        <input type="checkbox" id="menu-toggle" aria-label="Mostrar u ocultar el menú">
+        <label class="menu-btn" for="menu-toggle"><span></span><span class="solo-lectores">Menú</span></label>
+
+        <nav class="main-nav" aria-label="Navegación principal">
+            <ul>
+                    <li><a class="activo" href="index.html" aria-current="page">Inicio</a></li>
+                    <li><a href="paquetes.html">Paquetes</a></li>
+                    <li><a href="destinos.html">Destinos</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+    <section class="slider" aria-label="Destinos turísticos del Perú">
+            <figure class="slide">
+                <img src="images/banner-machu-picchu.jpg" alt="Vista de Machu Picchu">
+                <figcaption>Machu Picchu, Cusco</figcaption>
+            </figure>
+            <figure class="slide">
+                <img src="images/paquete-cusco.jpg" alt="Paisaje del Cusco">
+                <figcaption>Cusco y el Valle Sagrado</figcaption>
+            </figure>
+            <figure class="slide">
+                <img src="images/paquete-arequipa.jpg" alt="Paisaje de Arequipa">
+                <figcaption>Arequipa y el Colca</figcaption>
+            </figure>
+            <figure class="slide">
+                <img src="images/paquete-puno.jpg" alt="Lago Titicaca en Puno">
+                <figcaption>Lago Titicaca, Puno</figcaption>
+            </figure>
+            <figure class="slide">
+                <img src="images/paquete-paracas.jpg" alt="Costa de Paracas">
+                <figcaption>Paracas, Ica</figcaption>
+            </figure>
+        <div class="slider-texto">
+            <h1>PERÚ EXPLORA TOURS</h1>
+            <p>Descubre experiencias inolvidables</p>
+            <div class="grupo-botones">
+                <a class="btn" href="paquetes.html">Explorar paquetes</a>
+                <a class="btn btn-claro" href="destinos.html">Ver destinos</a>
+            </div>
+        </div>
+        <div class="puntos" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+    </section>
+
+    <section class="section section-claro">
+        <div class="container intro">
+            <div>
+                <h2>Tu próxima aventura comienza aquí</h2>
+                <p>El Perú está lleno de lugares que merecen ser descubiertos. Desde la magia de los Andes hasta la belleza de la costa, cada destino tiene una historia que contar.</p>
+                <p>En Perú Explora Tours queremos ayudarte a vivir esas experiencias de una manera cómoda, segura y memorable.</p>
+                <a class="btn btn-borde" href="nosotros.html">Conócenos</a>
+            </div>
+            <img src="images/paquete-cusco-1.jpg" alt="Machu Picchu entre las montañas" loading="lazy">
+        </div>
+    </section>
+
+    <section class="section" id="destinos-populares">
+        <div class="container">
+            <h2 class="section-title">Destinos populares</h2>
+            <p class="section-sub">Lugares que los viajeros más buscan: historia, naturaleza y cultura viva.</p>
+            <div class="cards">
+            <article class="card">
+                <div class="card-img"><img src="images/paquete-cusco.jpg" alt="Destino turístico Cusco y Machu Picchu" loading="lazy"></div>
+                <div class="card-content">
+                    <h3>Cusco y Machu Picchu</h3>
+                    <div class="card-datos"><span class="duracion">5 días sugeridos</span><p class="precio">Desde S/ 1,450</p></div>
+                    <p>Capital del Imperio Inca, Valle Sagrado y la ciudadela de Machu Picchu.</p>
+                    <a class="btn btn-borde" href="destinos.html#cusco">Ver detalles</a>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-img"><img src="images/paquete-arequipa.jpg" alt="Destino turístico Arequipa" loading="lazy"></div>
+                <div class="card-content">
+                    <h3>Arequipa</h3>
+                    <div class="card-datos"><span class="duracion">4 días sugeridos</span><p class="precio">Desde S/ 980</p></div>
+                    <p>La Ciudad Blanca, el Monasterio de Santa Catalina y el Cañón del Colca.</p>
+                    <a class="btn btn-borde" href="destinos.html#arequipa">Ver detalles</a>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-img"><img src="images/paquete-puno.jpg" alt="Destino turístico Puno" loading="lazy"></div>
+                <div class="card-content">
+                    <h3>Puno</h3>
+                    <div class="card-datos"><span class="duracion">3 días sugeridos</span><p class="precio">Desde S/ 890</p></div>
+                    <p>El Lago Titicaca, las islas flotantes de los Uros y la isla Taquile.</p>
+                    <a class="btn btn-borde" href="destinos.html#puno">Ver detalles</a>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-img"><img src="images/paquete-paracas.jpg" alt="Destino turístico Paracas" loading="lazy"></div>
+                <div class="card-content">
+                    <h3>Paracas</h3>
+                    <div class="card-datos"><span class="duracion">1 día sugeridos</span><p class="precio">Desde S/ 650</p></div>
+                    <p>Islas Ballestas, fauna marina y la Reserva Nacional frente al mar.</p>
+                    <a class="btn btn-borde" href="destinos.html#paracas">Ver detalles</a>
+                </div>
+            </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-claro" id="paquetes-destacados">
+        <div class="container">
+            <h2 class="section-title">Paquetes turísticos</h2>
+            <p class="section-sub">Elige una experiencia completa con hospedaje, guía y actividades incluidas.</p>
+            <div class="cards">
+            <article class="card">
+                <div class="card-img">
+                    <img src="images/paquete-cusco.jpg" alt="Paquete turístico Cusco" loading="lazy">
+                    <span class="etiqueta">Más vendido</span>
+                </div>
+                <div class="card-content">
+                    <h3>Cusco Mágico</h3>
+                    <div class="card-datos">
+                        <span class="duracion">5 días / 4 noches</span>
+                        <p class="precio"><small>Desde</small> S/ 1,450</p>
+                    </div>
+                    <p>Machu Picchu, Valle Sagrado y city tour por la ciudad imperial.</p>
+                    <ul class="servicios">
+                        <li>Hospedaje 4 noches</li>
+                        <li>Guía profesional</li>
+                        <li>Entrada a Machu Picchu</li>
+                    </ul>
+                    <a class="btn" href="paquete-cusco.html">Ver paquete</a>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-img">
+                    <img src="images/paquete-arequipa.jpg" alt="Paquete turístico Arequipa" loading="lazy">
+                    <span class="etiqueta">Cultura y naturaleza</span>
+                </div>
+                <div class="card-content">
+                    <h3>Arequipa y Colca</h3>
+                    <div class="card-datos">
+                        <span class="duracion">4 días / 3 noches</span>
+                        <p class="precio"><small>Desde</small> S/ 980</p>
+                    </div>
+                    <p>La Ciudad Blanca y el impresionante Cañón del Colca.</p>
+                    <ul class="servicios">
+                        <li>Hospedaje 3 noches</li>
+                        <li>Guía profesional</li>
+                        <li>Excursión al Colca</li>
+                    </ul>
+                    <a class="btn" href="paquete-arequipa.html">Ver paquete</a>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-img">
+                    <img src="images/paquete-puno.jpg" alt="Paquete turístico Puno" loading="lazy">
+                    <span class="etiqueta">Nuevo</span>
+                </div>
+                <div class="card-content">
+                    <h3>Puno y Lago Titicaca</h3>
+                    <div class="card-datos">
+                        <span class="duracion">3 días / 2 noches</span>
+                        <p class="precio"><small>Desde</small> S/ 890</p>
+                    </div>
+                    <p>Islas flotantes de los Uros, Taquile y tradiciones del altiplano.</p>
+                    <ul class="servicios">
+                        <li>Hospedaje 2 noches</li>
+                        <li>Paseo en bote</li>
+                        <li>Guía profesional</li>
+                    </ul>
+                    <a class="btn" href="paquete-puno.html">Ver paquete</a>
+                </div>
+            </article>
+            </div>
+            <p class="aviso">Precios referenciales para fines académicos.</p>
+            <p class="centrado"><a class="btn" href="paquetes.html">Ver todos los paquetes</a></p>
+        </div>
+    </section>
+
+    <section class="section section-crema" id="promociones">
+        <div class="container">
+            <h2 class="section-title">Promociones destacadas</h2>
+            <p class="section-sub">Ideas para ahorrar y planificar mejor tu viaje.</p>
+            <div class="cards">
+            <article class="card">
+                <div class="card-img"><img src="images/paquete-cusco.jpg" alt="Promoción Cusco Mágico" loading="lazy"><span class="etiqueta">Reserva anticipada</span></div>
+                <div class="card-content">
+                    <h3>Cusco Mágico</h3>
+                    <p>Reserva con anticipación y obtén un descuento referencial en el paquete Cusco Mágico.</p>
+                    <a class="btn btn-borde" href="paquete-cusco.html">Ver paquete</a>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-img"><img src="images/paquete-arequipa.jpg" alt="Promoción Arequipa y Colca" loading="lazy"><span class="etiqueta">Viaja en grupo</span></div>
+                <div class="card-content">
+                    <h3>Arequipa y Colca</h3>
+                    <p>Beneficio referencial para grupos de amigos o familias de 4 o más personas.</p>
+                    <a class="btn btn-borde" href="paquete-arequipa.html">Ver paquete</a>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-img"><img src="images/paquete-paracas.jpg" alt="Promoción Paracas Full Day" loading="lazy"><span class="etiqueta">Escapada corta</span></div>
+                <div class="card-content">
+                    <h3>Paracas Full Day</h3>
+                    <p>Una opción de un solo día para quienes tienen poco tiempo.</p>
+                    <a class="btn btn-borde" href="paquete-paracas.html">Ver paquete</a>
+                </div>
+            </article>
+            </div>
+            <p class="aviso">Contenido demostrativo para fines académicos. Estas promociones no son reales.</p>
+        </div>
+    </section>
+
+    <section class="section" id="beneficios">
+        <div class="container">
+            <h2 class="section-title">¿Por qué viajar con nosotros?</h2>
+            <p class="section-sub">Pensamos cada detalle para que solo te preocupes por disfrutar.</p>
+            <div class="beneficios">
+            <article class="beneficio">
+                <div class="beneficio-icono" aria-hidden="true">★</div>
+                <h3>Experiencias seleccionadas</h3>
+                <p>Itinerarios pensados para disfrutar lo mejor de cada destino.</p>
+            </article>
+            <article class="beneficio">
+                <div class="beneficio-icono" aria-hidden="true">☺</div>
+                <h3>Atención personalizada</h3>
+                <p>Te ayudamos a elegir el paquete que se ajusta a tu viaje.</p>
+            </article>
+            <article class="beneficio">
+                <div class="beneficio-icono" aria-hidden="true">✓</div>
+                <h3>Seguridad</h3>
+                <p>Viajes organizados, con transporte y guías confiables.</p>
+            </article>
+            <article class="beneficio">
+                <div class="beneficio-icono" aria-hidden="true">⛰</div>
+                <h3>Guías experimentados</h3>
+                <p>Profesionales que conocen la historia y la cultura de cada lugar.</p>
+            </article>
+            <article class="beneficio">
+                <div class="beneficio-icono" aria-hidden="true">♻</div>
+                <h3>Turismo responsable</h3>
+                <p>Respeto por las comunidades, el patrimonio y la naturaleza.</p>
+            </article>
+            <article class="beneficio">
+                <div class="beneficio-icono" aria-hidden="true">♥</div>
+                <h3>Conocimiento local</h3>
+                <p>Información útil y recomendaciones de quienes conocen la zona.</p>
+            </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-claro" id="galeria">
+        <div class="container">
+            <h2 class="section-title">Galería turística</h2>
+            <p class="section-sub">Algunos paisajes que te esperan en nuestros recorridos.</p>
+            <div class="galeria">
+            <figure class="grande">
+                <img src="images/banner-machu-picchu.jpg" alt="Panorámica de Machu Picchu" loading="lazy">
+                <figcaption>Machu Picchu</figcaption>
+            </figure>
+            <figure>
+                <img src="images/paquete-cusco-2.jpg" alt="Calles del Cusco" loading="lazy">
+                <figcaption>Cusco</figcaption>
+            </figure>
+            <figure>
+                <img src="images/paquete-puno.jpg" alt="Lago Titicaca" loading="lazy">
+                <figcaption>Lago Titicaca</figcaption>
+            </figure>
+            <figure>
+                <img src="images/paquete-cusco-3.jpg" alt="Valle Sagrado" loading="lazy">
+                <figcaption>Valle Sagrado</figcaption>
+            </figure>
+            <figure>
+                <img src="images/paquete-arequipa.jpg" alt="Arequipa" loading="lazy">
+                <figcaption>Arequipa</figcaption>
+            </figure>
+            <figure>
+                <img src="images/paquete-paracas.jpg" alt="Costa de Paracas" loading="lazy">
+                <figcaption>Paracas</figcaption>
+            </figure>
+            <figure>
+                <img src="images/paquete-cusco-4.jpg" alt="Tren a Machu Picchu" loading="lazy">
+                <figcaption>Tren a Machu Picchu</figcaption>
+            </figure>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-crema" id="testimonios">
+        <div class="container">
+            <h2 class="section-title">Testimonios</h2>
+            <p class="section-sub">Lo que dirían nuestros viajeros.</p>
+            <div class="testimonios">
+            <figure class="testimonio">
+                <div>
+                    <p class="estrellas" aria-label="5 estrellas">★★★★★</p>
+                    <blockquote><p>“Excelente organización y un guía muy amable. Machu Picchu superó mis expectativas.”</p></blockquote>
+                </div>
+                <figcaption>María Fernández<span>Paquete Cusco Mágico</span></figcaption>
+            </figure>
+            <figure class="testimonio">
+                <div>
+                    <p class="estrellas" aria-label="5 estrellas">★★★★★</p>
+                    <blockquote><p>“Muy buena atención y un recorrido bien planificado. Lo recomiendo para viajar en familia.”</p></blockquote>
+                </div>
+                <figcaption>Jorge Ramírez<span>Paquete Arequipa y Colca</span></figcaption>
+            </figure>
+            <figure class="testimonio">
+                <div>
+                    <p class="estrellas" aria-label="5 estrellas">★★★★★</p>
+                    <blockquote><p>“El paseo por el lago fue lo mejor del viaje. Todo salió a tiempo y sin complicaciones.”</p></blockquote>
+                </div>
+                <figcaption>Lucía Torres<span>Paquete Puno y Lago Titicaca</span></figcaption>
+            </figure>
+            </div>
+            <p class="aviso">Testimonios simulados para fines académicos.</p>
+        </div>
+    </section>
+
+    <section class="section cta">
+        <div class="container">
+            <h2>¿Listo para descubrir el Perú?</h2>
+            <p>Elige tu próximo destino y comienza a preparar una experiencia que recordarás para siempre.</p>
+            <div class="grupo-botones">
+                <a class="btn" href="paquetes.html">Ver nuestros paquetes</a>
+                <a class="btn btn-claro" href="contacto.html">Contáctanos</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+
+        <div>
+            <div class="footer-logo">
+                <img src="images/logo.jpg" alt="Logo de Perú Explora Tours" width="48" height="48">
+                <strong>PERÚ EXPLORA TOURS</strong>
+            </div>
+            <p>Descubre experiencias inolvidables. Agencia turística ficticia creada con fines académicos.</p>
+        </div>
+
+        <div>
+            <h2>Enlaces rápidos</h2>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="paquetes.html">Paquetes</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Contáctanos</h2>
+            <address>
+                Esquina de Hermann Güiner y Av. Augusto B. Leguía,<br>
+                Chiclayo 14011<br>
+                peruexploratours@gmail.com<br>
+                (51) 988 494 767
+            </address>
+        </div>
+
+        <div>
+            <h2>Redes sociales</h2>
+            <ul>
+                <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="container copyright">
+        <small>&copy; 2026 PERÚ EXPLORA TOURS &ndash; Proyecto académico.</small>
+        <small>Taller de Programación Web &middot; HTML5 + CSS3</small>
+    </div>
+</footer>
+
+<a class="volver-arriba" href="#inicio" aria-label="Volver arriba">&uarr;</a>
+
+</body>
+</html>

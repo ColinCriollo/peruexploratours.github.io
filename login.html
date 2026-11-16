@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inicia sesión en Perú Explora Tours.">
+    <title>Iniciar sesión | Perú Explora Tours</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/interfaz.js"></script>
+    <script src="js/login.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-bar">
+        <a class="brand" href="login.html" aria-label="Perú Explora Tours">
+            <img src="images/logo.jpg" alt="Logo de Perú Explora Tours" width="58" height="58">
+            <span class="brand-texto">
+                <span class="brand-nombre">PERÚ EXPLORA TOURS</span>
+                <span class="brand-lema">Descubre experiencias inolvidables</span>
+            </span>
+        </a>
+    </div>
+</header>
+
+<main class="login-pagina">
+    <section class="form-card login-caja">
+        <h1>Iniciar sesión</h1>
+        <p class="login-sub">Ingresa tus datos para ver nuestros paquetes.</p>
+
+        <div class="login-error" id="login-error" role="alert" hidden></div>
+
+        <form id="formulario-login" action="#" method="post" novalidate>
+            <div class="form-group">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Ingresa tu usuario" maxlength="15" autocomplete="username">
+            </div>
+            <div class="form-group">
+                <label for="clave">Contraseña</label>
+                <div class="login-clave">
+                    <input type="password" id="clave" name="clave" placeholder="Ingresa tu contraseña" maxlength="20" autocomplete="current-password">
+                    <button type="button" class="login-ver" id="ver-clave">Ver</button>
+                </div>
+            </div>
+            <button class="btn" type="submit" id="entrar">Entrar</button>
+        </form>
+        
+    </section>
+</main>
+
+<footer class="login-footer">
+    <p>&copy; 2026 Perú Explora Tours. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
