@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simulación de compra de paquetes turísticos. Usa exclusivamente datos ficticios.">
+    <title>Compra | Perú Explora Tours</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/sesion.js"></script>
+    <script src="js/interfaz.js"></script>
+    <script src="js/boleta.js"></script>
+    <script src="js/compra.js" defer></script>
+</head>
+<body>
+
+<header class="site-header" id="inicio">
+    <div class="container header-bar">
+
+        <a class="brand" href="index.html" aria-label="Perú Explora Tours - ir al inicio">
+            <img src="images/logo.jpg" alt="Logo de Perú Explora Tours" width="58" height="58">
+            <span class="brand-texto">
+                <span class="brand-nombre">PERÚ EXPLORA TOURS</span>
+                <span class="brand-lema">Descubre experiencias inolvidables</span>
+            </span>
+        </a>
+
+        <input type="checkbox" id="menu-toggle" aria-label="Mostrar u ocultar el menú">
+        <label class="menu-btn" for="menu-toggle"><span></span><span class="solo-lectores">Menú</span></label>
+
+        <nav class="main-nav" aria-label="Navegación principal">
+            <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="paquetes.html">Paquetes</a></li>
+                    <li><a href="destinos.html">Destinos</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+    <section class="page-banner banner-cusco">
+        <div class="container">
+            <h1>Simulación de compra</h1>
+            <p>Elige tu paquete y revisa el resumen. No se realiza ningún cobro real.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container compra-grid">
+            <section class="form-card">
+                <h2>Datos de la compra</h2>
+                <p><strong>Demostración: no ingreses datos personales ni bancarios reales.</strong></p><form id="formulario-compra" action="#" method="post" novalidate>
+                    <div class="form-group">
+                        <label for="paquete">Paquete</label>
+                        <select id="paquete" name="paquete">
+                            <option value="">Selecciona un paquete</option>
+                            <option value="cusco" data-precio="1450">Cusco Mágico - S/ 1,450</option>
+                            <option value="arequipa" data-precio="980">Arequipa y Colca - S/ 980</option>
+                            <option value="puno" data-precio="890">Puno y Lago Titicaca - S/ 890</option>
+                            <option value="paracas" data-precio="650">Paracas Full Day - S/ 650</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="personas">Número de personas</label>
+                        <input type="number" id="personas" name="personas" min="1" max="20" value="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha">Fecha de viaje</label>
+                        <input type="date" id="fecha" name="fecha">
+                    </div>
+                    <div class="form-group">
+                        <label for="nombre">Nombre del titular</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombres y apellidos">
+                    </div>
+                    <div class="form-group">
+                        <label for="dni">DNI</label>
+                        <input type="text" id="dni" name="dni" placeholder="8 dígitos" maxlength="8" inputmode="numeric">
+                    </div>
+                    <div class="form-group">
+                        <label for="metodo">Método de pago</label>
+                        <select id="metodo" name="metodo">
+                            <option value="">Selecciona un método</option>
+                            <option value="Tarjeta">Tarjeta de crédito o débito</option>
+                            <option value="Yape">Yape</option>
+                            <option value="Plin">Plin</option>
+                            <option value="Transferencia">Transferencia bancaria</option>
+                        </select>
+                    </div>
+                    <div class="pago-detalle" id="pago-tarjeta" hidden>
+                        <div class="form-group">
+                            <label for="tarjeta-numero">Número de tarjeta</label>
+                            <input type="text" id="tarjeta-numero" inputmode="numeric" maxlength="19" placeholder="0000 0000 0000 0000" autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <label for="tarjeta-titular">Nombre en la tarjeta</label>
+                            <input type="text" id="tarjeta-titular" maxlength="40" placeholder="Como aparece en la tarjeta" autocomplete="off">
+                        </div>
+                        <div class="pago-fila">
+                            <div class="form-group">
+                                <label for="tarjeta-vence">Vencimiento</label>
+                                <input type="text" id="tarjeta-vence" inputmode="numeric" maxlength="5" placeholder="MM/AA" autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                                <label for="tarjeta-cvv">CVV</label>
+                                <input type="password" id="tarjeta-cvv" inputmode="numeric" maxlength="4" placeholder="123" autocomplete="off">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pago-detalle" id="pago-billetera" hidden>
+                        <div class="form-group">
+                            <label for="billetera-celular" id="etiqueta-celular">Número de celular</label>
+                            <input type="text" id="billetera-celular" inputmode="numeric" maxlength="9" placeholder="9XXXXXXXX" autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <label for="billetera-codigo">Código de aprobación (6 dígitos)</label>
+                            <input type="text" id="billetera-codigo" inputmode="numeric" maxlength="6" placeholder="123456" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="pago-detalle" id="pago-transferencia" hidden>
+                        <div class="form-group">
+                            <label for="transferencia-banco">Banco de origen</label>
+                            <select id="transferencia-banco">
+                                <option value="">Selecciona un banco</option>
+                                <option value="BCP">BCP</option>
+                                <option value="BBVA">BBVA</option>
+                                <option value="Interbank">Interbank</option>
+                                <option value="Scotiabank">Scotiabank</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="transferencia-operacion">Número de operación</label>
+                            <input type="text" id="transferencia-operacion" inputmode="numeric" maxlength="12" placeholder="Entre 8 y 12 dígitos" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="terminos" name="terminos">
+                        <label for="terminos">Acepto los términos y condiciones de la simulación.</label>
+                    </div>
+                    <button class="btn" type="submit">Confirmar compra</button>
+                </form>
+            </section>
+
+            <aside class="form-card resumen-compra" aria-live="polite">
+                <h2>Resumen</h2>
+                <dl>
+                    <div class="fila"><dt>Paquete</dt><dd id="r-paquete">-</dd></div>
+                    <div class="fila"><dt>Precio por persona</dt><dd id="r-precio">S/ 0.00</dd></div>
+                    <div class="fila"><dt>Personas</dt><dd id="r-personas">1</dd></div>
+                    <div class="fila"><dt>Subtotal</dt><dd id="r-subtotal">S/ 0.00</dd></div>
+                    <div class="fila"><dt>Descuento grupal (10% desde 5 personas)</dt><dd id="r-descuento">- S/ 0.00</dd></div>
+                    <div class="fila"><dt>IGV incluido (18%)</dt><dd id="r-igv">S/ 0.00</dd></div>
+                    <div class="fila total"><dt>Total</dt><dd id="r-total">S/ 0.00</dd></div>
+                </dl>
+            </aside>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+
+        <div>
+            <div class="footer-logo">
+                <img src="images/logo.jpg" alt="Logo de Perú Explora Tours" width="48" height="48">
+                <strong>PERÚ EXPLORA TOURS</strong>
+            </div>
+            <p>Descubre experiencias inolvidables. Agencia turística ficticia creada con fines académicos.</p>
+        </div>
+
+        <div>
+            <h2>Enlaces rápidos</h2>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="paquetes.html">Paquetes</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Contáctanos</h2>
+            <address>
+                Esquina de Hermann Güiner y Av. Augusto B. Leguía,<br>
+                Chiclayo 14011<br>
+                peruexploratours@gmail.com<br>
+                (51) 988 494 767
+            </address>
+        </div>
+
+        <div>
+            <h2>Redes sociales</h2>
+            <ul>
+                <li><a href="https://www.facebook.com/share/1FrJDhEqK4/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li><a href="https://www.instagram.com/peruexploratours?avpt=MWdseGxvdG8yeDJudw==" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@peruexploratours?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="container copyright">
+        <small>&copy; 2026 PERÚ EXPLORA TOURS &ndash; Proyecto académico.</small>
+        <small>Taller de Programación Web &middot; HTML5 + CSS3</small>
+    </div>
+</footer>
+
+<a class="volver-arriba" href="#inicio" aria-label="Volver arriba">&uarr;</a>
+
+</body>
+</html>

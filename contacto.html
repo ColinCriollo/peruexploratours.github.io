@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Perú Explora Tours - Descubre experiencias inolvidables. Proyecto académico.">
+    <title>Contacto | Perú Explora Tours</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/sesion.js"></script>
+    <script src="js/interfaz.js"></script>
+    <script src="js/validaciones.js" defer></script>
+</head>
+<body>
+
+<header class="site-header" id="inicio">
+    <div class="container header-bar">
+
+        <a class="brand" href="index.html" aria-label="Perú Explora Tours - ir al inicio">
+            <img src="images/logo.jpg" alt="Logo de Perú Explora Tours" width="58" height="58">
+            <span class="brand-texto">
+                <span class="brand-nombre">PERÚ EXPLORA TOURS</span>
+                <span class="brand-lema">Descubre experiencias inolvidables</span>
+            </span>
+        </a>
+
+        <input type="checkbox" id="menu-toggle" aria-label="Mostrar u ocultar el menú">
+        <label class="menu-btn" for="menu-toggle"><span></span><span class="solo-lectores">Menú</span></label>
+
+        <nav class="main-nav" aria-label="Navegación principal">
+            <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="paquetes.html">Paquetes</a></li>
+                    <li><a href="destinos.html">Destinos</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a class="activo" href="contacto.html" aria-current="page">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+    <section class="page-banner banner-arequipa">
+        <div class="container">
+            <h1>Contáctanos</h1>
+            <p>Estamos aquí para ayudarte a planificar tu próximo viaje.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container contacto-layout">
+
+            <section class="contacto-info">
+                <h2>Ponte en contacto con nosotros</h2>
+                <p>¿Tienes alguna pregunta sobre nuestros paquetes turísticos? Escríbenos o comunícate con nosotros.</p>
+
+                <div class="contacto-item"><h3>Teléfono y WhatsApp</h3><p>(51) 988 494 767</p></div>
+                <div class="contacto-item"><h3>Correo electrónico</h3><p>peruexploratours@gmail.com</p></div>
+                <div class="contacto-item"><h3>Dirección</h3><p>Esquina de Hermann Güiner y Av. Augusto B. Leguía, Chiclayo 14011</p></div>
+                <div class="contacto-item"><h3>Horario de atención</h3><p>Lunes a sábado, 9:00 a. m. &ndash; 6:00 p. m.</p></div>
+
+                <div class="contacto-item">
+                    <h3>Redes sociales</h3>
+                    <ul class="redes">
+                        <li><a href="https://www.facebook.com/share/1FrJDhEqK4/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/peruexploratours?avpt=MWdseGxvdG8yeDJudw==" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="https://www.tiktok.com/@peruexploratours?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+                        <li><a href="https://wa.me/51988494767" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+                    </ul>
+                </div>
+
+                <div class="mapa">
+                    <h3>Ubicación</h3>
+                    <iframe title="Mapa de ubicación de Perú Explora Tours en Chiclayo"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.0534744143056!2d-79.86591922546128!3d-6.7633346661359335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904ceee4d53c16e7%3A0x421be55c99eef623!2sUniversidad%20Tecnol%C3%B3gica%20del%20Per%C3%BA!5e0!3m2!1ses!2spe!4v1791649291071!5m2!1ses!2spe"
+                            allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+            </section>
+
+            <section class="form-card">
+                <h2>Envíanos un mensaje</h2>
+                <p class="form-demo">Completa tus datos para solicitar informacion sobre nuestros paquetes turísticos. Los campos seran verificados mediante JavaScript.</p>
+                <form action="#" method="post" id="formulario-contacto">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="nombres">Nombres</label>
+                            <input type="text" id="nombres" name="nombres" placeholder="Tus nombres" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="apellidos">Apellidos</label>
+                            <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="dni">Numero de DNI</label>
+                            <input type="text" id="dni" name="dni" placeholder="Ingresa tu DNI" maxlength="8" inputmode="numeric" required>
+                        </div>
+                        <div class="form-group">
+                        <label for="puntuacion">Calificación del servicio (0 - 20)</label>
+                        <input type="text" id="puntuacion" name="puntuacion" placeholder="Ejemplo 18" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="correo">Correo electrónico</label>
+                            <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="988 494 767">
+                        </div>
+                        <div class="form-group">
+                        <label for="destino">Destino de interés</label>
+                        <select id="destino" name="destino" required onchange="mostrarRecomendacion()">
+                        <option value="">Selecciona un destino</option>
+                        <option value="Cusco y Machu Picchu">Cusco y Machu Picchu</option>
+                        <option value="Arequipa y Colca">Arequipa y Colca</option>
+                        <option value="Puno y Lago Titicaca">Puno y Lago Titicaca</option>
+                        <option value="Paracas">Paracas</option>
+                        </select>
+                        <p id="recomendacion-destino" class="calc-recomendacion"></p>
+                        </div>
+                        <div class="form-group">
+                            <label for="tipo">Tipo de paquete</label>
+                            <select id="tipo" name="tipo"><option value="">Selecciona un paquete</option><option value="Cusco Mágico">Cusco Mágico</option><option value="Arequipa y Colca">Arequipa y Colca</option><option value="Puno y Lago Titicaca">Puno y Lago Titicaca</option><option value="Paracas Full Day">Paracas Full Day</option><option value="Personalizado">Viaje personalizado</option></select>
+                        </div>
+                        <div class="form-group">
+                            <label for="fecha">Fecha estimada</label>
+                            <input type="date" id="fecha" name="fecha">
+                        </div>
+                        <div class="form-group">
+                            <label for="viajeros">Cantidad de viajeros</label>
+                            <input type="number" id="viajeros" name="viajeros" min="1" max="30" value="1" required>
+                        </div>
+                        <div class="form-group completo">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu consulta..." required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn">Enviar mensaje</button>
+                </form>
+            </section>
+
+        </div>
+    </section>
+
+    <section class="section section-claro">
+        <div class="container">
+            <h2 class="section-title">Preguntas frecuentes</h2>
+            <div class="faq separado">
+            <details>
+                <summary>¿Cómo puedo reservar un paquete?</summary>
+                <p>Revisa la página de cada paquete y completa el formulario de solicitud. En este proyecto académico el formulario es demostrativo, por lo que no envía información real.</p>
+            </details>
+            <details>
+                <summary>¿Qué incluyen los paquetes turísticos?</summary>
+                <p>Cada paquete detalla en su página qué servicios incluye (por ejemplo transporte, hospedaje, guía y entradas) y cuáles no.</p>
+            </details>
+            <details>
+                <summary>¿Puedo personalizar mi viaje?</summary>
+                <p>Sí. Puedes escribirnos para consultar opciones según tus fechas, intereses y número de viajeros.</p>
+            </details>
+            <details>
+                <summary>¿Qué métodos de pago se aceptarían?</summary>
+                <p>Como la agencia es ficticia, no se realizan pagos. En una agencia real se podrían aceptar tarjeta, transferencia o efectivo.</p>
+            </details>
+            <details>
+                <summary>¿Qué debo llevar para mi viaje?</summary>
+                <p>Documento de identidad o pasaporte, ropa cómoda y abrigadora según el destino, protector solar, calzado adecuado y agua.</p>
+            </details>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+
+        <div>
+            <div class="footer-logo">
+                <img src="images/logo.jpg" alt="Logo de Perú Explora Tours" width="48" height="48">
+                <strong>PERÚ EXPLORA TOURS</strong>
+            </div>
+            <p>Descubre experiencias inolvidables. Agencia turística ficticia creada con fines académicos.</p>
+        </div>
+
+        <div>
+            <h2>Enlaces rápidos</h2>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="paquetes.html">Paquetes</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Contáctanos</h2>
+            <address>
+                Esquina de Hermann Güiner y Av. Augusto B. Leguía,<br>
+                Chiclayo 14011<br>
+                peruexploratours@gmail.com<br>
+                (51) 988 494 767
+            </address>
+        </div>
+
+        <div>
+            <h2>Redes sociales</h2>
+            <ul>
+                <li><a href="https://www.facebook.com/share/1FrJDhEqK4/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li><a href="https://www.instagram.com/peruexploratours?avpt=MWdseGxvdG8yeDJudw==" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@peruexploratours?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="container copyright">
+        <small>&copy; 2026 PERÚ EXPLORA TOURS &ndash; Proyecto académico.</small>
+        <small>Taller de Programación Web &middot; HTML5 + CSS3</small>
+    </div>
+</footer>
+
+<a class="volver-arriba" href="#inicio" aria-label="Volver arriba">&uarr;</a>
+
+</body>
+</html>
